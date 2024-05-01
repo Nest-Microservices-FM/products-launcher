@@ -18,8 +18,7 @@ services:
     environment:
       - PORT=3000
       - NATS_SERVERS=nats://nats-server:4222
-
-
+      
   # products-ms:
   #   build: ./products-ms
   #   volumes:
@@ -84,3 +83,5 @@ services:
     environment:
       - NATS_SERVERS= nats://nats-server:4222
       - PORT=${AUTH_MS_PORT}
+      - DATABASE_URL=${DATABASE_URL}
+
